@@ -1,6 +1,8 @@
 package animais;
 
-public class animal {
+
+/* Abstract -  Não pode criar um objeto a partir dela so estende-la */
+public abstract class animal {
     
     /* private String nome;
     private String cor;
@@ -21,9 +23,8 @@ public class animal {
 
     protected void dormir(){}
 
-    public void soar(){
-        System.out.println("cri cri");
-    }
+    /* Todo abstract não tem corpo {} */
+    public abstract void soar();
 
 
     
@@ -32,6 +33,46 @@ public class animal {
         this.nome = nome;
         this.cor = cor;
         this.peso = peso;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public String getEstadoDeEspirito() {
+        return estadoDeEspirito;
+    }
+
+    public void setEstadoDeEspirito(String estadoDeEspirito) {
+        this.estadoDeEspirito = estadoDeEspirito;
     }
 
 
